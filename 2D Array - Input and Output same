@@ -1,0 +1,75 @@
+2D array - take input and print output same.
+
+import java.util.*;
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+public class Main {
+  public static void main(String[] args) {
+     Scanner scn = new Scanner(System.in);
+     int n = scn.nextInt();
+     int m = scn.nextInt();
+     int [][] mat = new int [n] [m];
+    //  System.out.println("rows " + mat.length);
+    //  System.out.println("column "+ mat[0].length);
+     for (int i =0; i <n; i++)
+     {
+      for (int j =0; j < m ; j++)
+      {
+        mat[i][j]= scn.nextInt();
+      }
+      // System.out.println();
+     }
+     for(int i =0; i <n ; i++)
+     {
+      for (int j =0; j < m; j++)
+      {
+        System.out.print(mat[i][j]+" ");
+      }
+      System.out.println();
+     }
+  }
+}
+/*
+Code explanation : 
+
+Reading dimensions of the 2D array:
+int n = scn.nextInt();
+
+int m = scn.nextInt();
+
+These lines use the nextInt() method of the Scanner class to read two integers entered by the user, which represent the number of rows (n) and the number of columns (m) of the 2D array, respectively.
+
+Creating a 2D array:
+int[][] mat = new int[n][m];];
+
+This line creates a 2D array named mat with n rows and m columns. The array is initialized with default values (zeros for int).
+
+Taking input for the 2D array:
+for (int i = 0; i < n; i++) {
+
+    for (int j = 0; j < m; j++) {
+
+        mat[i][j] = scn.nextInt();
+
+    }
+
+}; j++) { mat[i][j] = scn.nextInt(); } }
+
+These nested loops iterate over each element of the 2D array and use the nextInt() method to read an integer entered by the user and store it in the corresponding position of the array.
+
+Printing the 2D array:
+for (int i = 0; i < n; i++) {
+
+    for (int j = 0; j < m; j++) {
+
+        System.out.print(mat[i][j] + " ");
+
+    }
+
+    System.out.println();
+
+}.out.print(mat[i][j] + " "); } System.out.println(); }
+
+These nested loops iterate over each row and column of the 2D array and print its elements row by row. The print() method is used to print each element followed by a space, and println() is used to move to the next line after printing each row.
+*/
+​
